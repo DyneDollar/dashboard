@@ -1,3 +1,4 @@
+import React from 'react';
 import Logo from '../images/logos/PNG/DyneDollar_Logo_50x50px.png';
 import NameLogo from '../images/logos/PNG/DyneDollar_name_logo.png';
 

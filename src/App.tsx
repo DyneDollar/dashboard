@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/App.css';
 import './styles/TopNavBar.css';
 import TopNavBar from './components/TopNavBar';
