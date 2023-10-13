@@ -25,7 +25,7 @@ const Sidenav = () => {
     },
     {
       icon: BsCurrencyExchange,
-      text: "Token Exchange",
+      text: "Get DyneDollar",
       link: "/token-exchange",
     },
   ];

@@ -12,74 +12,83 @@ import {
   Text,
   Tag,
 } from "@chakra-ui/react";
+// import { getTransactions } from '../../../utilities/dbAccess.js';
+// import { useState } from "react";
+
 const TransactionTable = () => {
+  // getTransactions()
+  // .then((transactions) => {
+  //   setTransactionData(transactions);
+  // })
+  // .catch((err) => {
+  //   console.error(err);
+  // });
   const tableData = [
     {
-      id: "HD82NA2H",
-      date: "2023-06-20",
-      time: "07:00 AM",
-      type: {
-        name: "INR Deposit",
-        tag: "E-Transfer",
-      },
-      amount: "+₹81,123",
-      status: "pending",
-    },
-    {
-      id: "HD82NA4H",
-      date: "2023-06-18",
-      time: "07:00 AM",
-      type: {
-        name: "INR Widthdraw",
-        tag: "Wire Transfer",
-      },
-      amount: "-₹55,123",
-      status: "processing",
-    },
-    {
-      id: "HD82NA5H",
-      date: "2023-06-18",
-      time: "07:00 AM",
-      type: {
-        name: "Buy",
-        tag: "BTC",
-      },
-      amount: "12.0554484 BTC",
-      status: "cancelled",
-    },
-    {
-      id: "HD82NA6H",
-      date: "2023-06-18",
-      time: "07:00 AM",
-      type: {
-        name: "Sell",
-        tag: "BTC",
-      },
-      amount: "-2.0554484 BTC",
+      id: 1,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
       status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
     },
     {
-      id: "HD82NA7H",
-      date: "2023-06-20",
-      time: "07:00 AM",
-      type: {
-        name: "BTC Deposit",
-      },
-      amount: "+15.5000000",
-      status: "pending",
-    },
-    {
-      id: "HD82NA8H",
-      date: "2023-06-18",
-      time: "07:00 AM",
-      type: {
-        name: "BTC Widthdraw",
-      },
-      amount: "-5.05555544",
+      id: 2,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
       status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
     },
+    {
+      id: 3,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
+      status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    },
+    {
+      id: 4,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
+      status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    },
+    {
+      id: 5,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
+      status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    },
+    {
+      id: 6,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
+      status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    },
+    {
+      id: 7,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
+      status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    },
+    {
+      id: 8,
+      date: "2022-06-09",
+      coin: "ETH",
+      amount: 250.81,
+      status: "completed",
+      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    }
   ];
-
   const statusColor = {
     pending: "#797E82",
     processing: "#F5A50B",
@@ -92,26 +101,20 @@ const TransactionTable = () => {
       <Table variant="simple" colorScheme="gray">
         <Thead>
           <Tr>
-            <Th>ID</Th>
-            <Th>Date & Time</Th>
-            <Th>Type</Th>
+            <Th>Date</Th>
+            <Th>Coin</Th>
             <Th>Amount</Th>
             <Th>Status</Th>
+            <Th>Information</Th>
           </Tr>
         </Thead>
         <Tbody color="p.black">
           {tableData.map((data) => (
             <Tr key={data.id}>
-              <Td fontSize="sm" fontWeight="medium">
-                {data.id}
-              </Td>
               <Td>
                 <Stack spacing={0}>
                   <Text fontSize="sm" fontWeight="medium">
                     {data.date}
-                  </Text>
-                  <Text fontSize="xs" color="black.60">
-                    {data.time}
                   </Text>
                 </Stack>
               </Td>
@@ -119,10 +122,7 @@ const TransactionTable = () => {
                 {" "}
                 <Stack spacing={0}>
                   <Text fontSize="sm" fontWeight="medium">
-                    {data.type.name}
-                  </Text>
-                  <Text fontSize="xs" color="black.60">
-                    {data.type?.tag}
+                    {data.coin}
                   </Text>
                 </Stack>
               </Td>
@@ -137,6 +137,14 @@ const TransactionTable = () => {
                 >
                   {data.status}
                 </Tag>
+              </Td>
+              <Td>
+                {" "}
+                <Stack spacing={0}>
+                  <Text fontSize="sm" fontWeight="medium">
+                    {data.information}
+                  </Text>
+                </Stack>
               </Td>
             </Tr>
           ))}
