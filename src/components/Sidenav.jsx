@@ -1,8 +1,11 @@
-import { Box, HStack, Heading, Icon, Stack, Text } from "@chakra-ui/react";
+import { Box, HStack, Icon, Stack, Text, Image } from "@chakra-ui/react";
 import { RxDashboard } from "react-icons/rx";
 import { BsArrowDownUp, BsCurrencyExchange } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 import { Link, useLocation } from "react-router-dom";
+import DyneDollarLogo from '../assets/DyneDollar_Banne_logo_animated.gif';
+import '../App.css';
+
 const Sidenav = () => {
   const location = useLocation();
 
@@ -32,7 +35,7 @@ const Sidenav = () => {
 
   return (
     <Stack
-      bg="white"
+      className="bg-sidenav"
       justify="space-between"
       boxShadow={{
         base: "none",
@@ -45,9 +48,9 @@ const Sidenav = () => {
       h="100vh"
     >
       <Box>
-        <Heading textAlign="center" fontSize="20px" as="h1" pt="3.5rem">
-          DyneDollar
-        </Heading>
+        <Box textAlign="center">
+          <Link to="/"><Image src={DyneDollarLogo} alt="DyneDollar" className="dynedollar-logo"/></Link>
+        </Box>
         <Box mt="6" mx="3">
           {navLinks.map((nav) => (
             <Link to={nav.link} key={nav.text}>
@@ -86,7 +89,7 @@ const Sidenav = () => {
             }}
           >
             <Icon as={BiSupport} />
-            <Text fontSize="14px" fontWeight="medium">
+            <Text className="support">
               Support
             </Text>
           </HStack>

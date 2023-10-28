@@ -1,0 +1,28 @@
+.dynedollar-logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.parentbg {
+    background-color: #ffffff;
+}
+
+.bg-topnav {
+    background-color: blue;
+    color: white;
+}
+
+.bg-sidenav {
+    background-color: white;
+}
+
+.support {
+    font-size: "14px";
+    font-weight: bolder;
+}
+
+.support-menu {
+    color: black !important;
+}

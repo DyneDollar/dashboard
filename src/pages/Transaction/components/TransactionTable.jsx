@@ -15,6 +15,73 @@ import {
 // import { getTransactions } from '../../../utilities/dbAccess.js';
 // import { useState } from "react";
 
+export const tableData = [
+  {
+    id: 1,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  },
+  {
+    id: 2,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  },
+  {
+    id: 3,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  },
+  {
+    id: 4,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  },
+  {
+    id: 5,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  },
+  {
+    id: 6,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  },
+  {
+    id: 7,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  },
+  {
+    id: 8,
+    date: "2022-06-09",
+    coin: "ETH",
+    amount: 250.81,
+    status: "completed",
+    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+  }
+];
+
 const TransactionTable = () => {
   // getTransactions()
   // .then((transactions) => {
@@ -23,72 +90,7 @@ const TransactionTable = () => {
   // .catch((err) => {
   //   console.error(err);
   // });
-  const tableData = [
-    {
-      id: 1,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    },
-    {
-      id: 2,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    },
-    {
-      id: 3,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    },
-    {
-      id: 4,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    },
-    {
-      id: 5,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    },
-    {
-      id: 6,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    },
-    {
-      id: 7,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    },
-    {
-      id: 8,
-      date: "2022-06-09",
-      coin: "ETH",
-      amount: 250.81,
-      status: "completed",
-      information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
-    }
-  ];
+
   const statusColor = {
     pending: "#797E82",
     processing: "#F5A50B",

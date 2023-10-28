@@ -3,12 +3,13 @@ import React from "react";
 import Sidenav from "./Sidenav";
 import TopNav from "./TopNav";
 import SideDrawer from "./SideDrawer";
+import '../App.css';
 
 const DashboardLayout = ({ title, children }) => {
   const { isOpen, onClose, onOpen } = useDisclosure();
 
   return (
-    <Flex>
+    <Flex className="parentbg">
       <Box
         display={{
           base: "none",
