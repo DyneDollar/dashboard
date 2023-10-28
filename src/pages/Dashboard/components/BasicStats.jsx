@@ -61,7 +61,7 @@ const BasicStats = () => {
             <Icon as={AiOutlineInfoCircle} />
           </HStack>
           <Text textStyle="h2" fontWeight="medium">
-            {formatAsDollar(marketPrice)}
+            D$ {marketPrice}
           </Text>
         </Stack>
 
@@ -71,7 +71,7 @@ const BasicStats = () => {
             <Icon as={AiOutlineInfoCircle} />
           </HStack>
           <Text textStyle="h2" fontWeight="medium">
-            {formatAsDollar(priceTarget)}
+          D$ {priceTarget}
           </Text>
         </Stack>
 

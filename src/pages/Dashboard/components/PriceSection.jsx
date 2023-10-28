@@ -3,15 +3,8 @@ import {
   Flex,
   HStack,
   Icon,
-  Image,
   Stack,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import { CustomCard } from "../../../chakra/CustomCard";
 import { BsArrowUpRight } from "react-icons/bs";

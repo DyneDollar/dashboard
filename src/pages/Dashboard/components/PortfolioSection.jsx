@@ -1,10 +1,13 @@
-import { Button, HStack, Icon, Stack, Tag, Text } from "@chakra-ui/react";
+import { Button, HStack, Icon, Stack, Tag, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import {
   AiOutlineInfoCircle,
   AiOutlineArrowDown,
   AiOutlineArrowUp,
 } from "react-icons/ai";
+import DDLogo from '../../../assets/logo.svg';
+
+
 const PortfolioSection = () => {
   return (
     <HStack
@@ -45,7 +48,7 @@ const PortfolioSection = () => {
             <Icon as={AiOutlineInfoCircle} />
           </HStack>
           <Text textStyle="h2" fontWeight="medium">
-            ₹ 112,312.24
+            D$ 112,312.24
           </Text>
         </Stack>
 
@@ -69,15 +72,16 @@ const PortfolioSection = () => {
                 22.39401000
               </Text>{" "}
               <Tag colorScheme="gray" fontWeight="medium">
-                BTC
+                {/* <Image src={DDLogo} alt="DD"/> */}
+                D$
               </Tag>
             </HStack>
-            <HStack>
+            {/* <HStack>
               <Text textStyle="h2" fontWeight="medium">
                 ₹ 1,300.00
               </Text>{" "}
               <Tag colorScheme="gray">INR</Tag>
-            </HStack>
+            </HStack> */}
           </HStack>
         </Stack>
       </HStack>
