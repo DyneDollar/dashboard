@@ -4,7 +4,9 @@ import { BsArrowDownUp, BsCurrencyExchange } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 import { Link, useLocation } from "react-router-dom";
 import DyneDollarLogo from '../assets/DyneDollar_Banne_logo_animated.gif';
+import DyneDollarIcon from '../assets/D-Logo_BW_50px.png'
 import '../App.css';
+
 
 const Sidenav = () => {
   const location = useLocation();
@@ -72,6 +74,19 @@ const Sidenav = () => {
               </HStack>
             </Link>
           ))}
+          <a href="https://dynedollar.ai/">
+                <HStack borderRadius="10px" py="3" px="4"
+                _hover={{
+                  bg: "#F3F3F7",
+                  color: "#171717",
+                }}
+              >
+                <Image src={DyneDollarIcon} className="dynedollar-icon"/>
+                <Text fontSize="14px">
+                  Goto dynedollar.ai
+                </Text>
+              </HStack>
+          </a>
         </Box>
       </Box>
 

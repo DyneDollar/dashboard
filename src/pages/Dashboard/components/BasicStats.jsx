@@ -1,11 +1,12 @@
-import { Button, HStack, Icon, Stack, Tag, Text } from "@chakra-ui/react";
+import { Button, HStack, Icon, Stack, Tag, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import {
   AiOutlineInfoCircle,
   AiOutlineArrowDown,
   AiOutlineArrowUp,
 } from "react-icons/ai";
-import { formatTime, formatAsDollar, formatWithCommas } from '../../../utilities/helper';
+import { formatTime, formatWithCommas } from '../../../utilities/helper';
+import DDLogo from '../../../assets/D-Logo_BW_50px.png';
 
 
 const BasicStats = () => {
@@ -60,19 +61,20 @@ const BasicStats = () => {
             <Text fontSize="sm">Market Price</Text>
             <Icon as={AiOutlineInfoCircle} />
           </HStack>
-          <Text textStyle="h2" fontWeight="medium">
-            D$ {marketPrice}
-          </Text>
+          <HStack>
+            <Image src={DDLogo} alt="D$" className="dd-symbol"/>
+            <Text textStyle="h2" fontWeight="medium">{marketPrice}</Text>
+          </HStack>
         </Stack>
-
         <Stack>
           <HStack color="black.80">
             <Text fontSize="sm">Price Target</Text>
             <Icon as={AiOutlineInfoCircle} />
           </HStack>
-          <Text textStyle="h2" fontWeight="medium">
-          D$ {priceTarget}
-          </Text>
+          <HStack>
+            <Image src={DDLogo} alt="D$" className="dd-symbol"/>
+            <Text textStyle="h2" fontWeight="medium">{priceTarget}</Text>
+          </HStack>
         </Stack>
 
         <Stack>

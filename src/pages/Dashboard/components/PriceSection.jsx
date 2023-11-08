@@ -48,7 +48,7 @@ const PriceSection = () => {
         </Stack>
         <HStack>
           <Button leftIcon={<Icon as={AiFillPlusCircle} />}>Buy</Button>
-          <Button leftIcon={<Icon as={AiOutlineMinusCircle} />}>Sell</Button>
+          {/* <Button leftIcon={<Icon as={AiOutlineMinusCircle} />}>Sell</Button> */}
         </HStack>
       </Flex>
       <DisplayChart chartType="line" timestamps={timestamps} priceData={priceData} />

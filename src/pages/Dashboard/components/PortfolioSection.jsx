@@ -1,11 +1,11 @@
-import { Button, HStack, Icon, Stack, Tag, Text, Image } from "@chakra-ui/react";
+import { Button, HStack, Icon, Stack, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import {
   AiOutlineInfoCircle,
   AiOutlineArrowDown,
-  AiOutlineArrowUp,
 } from "react-icons/ai";
-import DDLogo from '../../../assets/logo.svg';
+import DDLogo from '../../../assets/D-Logo_BW_50px.png';
+import { Link } from "react-router-dom";
 
 
 const PortfolioSection = () => {
@@ -47,9 +47,10 @@ const PortfolioSection = () => {
             <Text fontSize="sm">Total Portfolio Value</Text>
             <Icon as={AiOutlineInfoCircle} />
           </HStack>
-          <Text textStyle="h2" fontWeight="medium">
-            D$ 112,312.24
-          </Text>
+          <HStack>
+            <Image src={DDLogo} alt="D$" className="dd-symbol"/>
+            <Text textStyle="h2" fontWeight="medium">112,312.24</Text>
+          </HStack>
         </Stack>
 
         <Stack>
@@ -68,27 +69,16 @@ const PortfolioSection = () => {
             }}
           >
             <HStack>
-              <Text textStyle="h2" fontWeight="medium">
-                22.39401000
-              </Text>{" "}
-              <Tag colorScheme="gray" fontWeight="medium">
-                {/* <Image src={DDLogo} alt="DD"/> */}
-                D$
-              </Tag>
+              <Image src={DDLogo} alt="D$" className="dd-symbol"/>
+              <Text textStyle="h2" fontWeight="medium">22.39401000</Text>
             </HStack>
-            {/* <HStack>
-              <Text textStyle="h2" fontWeight="medium">
-                ₹ 1,300.00
-              </Text>{" "}
-              <Tag colorScheme="gray">INR</Tag>
-            </HStack> */}
           </HStack>
         </Stack>
       </HStack>
 
       <HStack>
-        <Button leftIcon={<Icon as={AiOutlineArrowDown} />}>Deposit</Button>
-        <Button leftIcon={<Icon as={AiOutlineArrowUp} />}>Withdraw</Button>
+        <Button leftIcon={<Icon as={AiOutlineArrowDown} />}><Link to="/token-exchange">Deposit</Link></Button>
+        {/* <Button leftIcon={<Icon as={AiOutlineArrowUp} />}>Withdraw</Button> */}
       </HStack>
     </HStack>
   );

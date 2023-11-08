@@ -22,7 +22,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ export const tableData = [
     coin: "ETH",
     amount: 250.81,
     status: "completed",
-    information: "Address: bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
+    transactionAddress: "bhjgfAhdgf2124df24df587dfs4sdf44s2dd2f5s"
   }
 ];
 
@@ -107,7 +107,7 @@ const TransactionTable = () => {
             <Th>Coin</Th>
             <Th>Amount</Th>
             <Th>Status</Th>
-            <Th>Information</Th>
+            <Th>Transaction Address</Th>
           </Tr>
         </Thead>
         <Tbody color="p.black">
@@ -144,7 +144,7 @@ const TransactionTable = () => {
                 {" "}
                 <Stack spacing={0}>
                   <Text fontSize="sm" fontWeight="medium">
-                    {data.information}
+                    {data.transactionAddress}
                   </Text>
                 </Stack>
               </Td>
