@@ -5,6 +5,11 @@
     margin: 0 auto;
 }
 
+.dynedollar-icon {
+    width: 20px;
+    height: 20px;   
+}
+
 .parentbg {
     background-color: #ffffff;
 }
@@ -25,4 +30,9 @@
 
 .support-menu {
     color: black !important;
+}
+
+.dd-symbol {
+    width: 30px;
+    height: 30px;   
 }
